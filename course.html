@@ -15,15 +15,21 @@
 			<li><a href="album.html">相簿集</li>
 			<li><a href="journal.html">旅遊日誌</li>
 			<li>
-				<a onload="ShowTime"></a>
+				<a>
+					<script language="javascript">
+						var Today=new Date();
+					　	document.write("今天日期 " + Today.getFullYear() + " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
+					</script>
+				</a>
 			</li>
 		</ul>
 	</nav>
 	<center>
 		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTGsi4vPjhTVLFrFMG58cOh0hfC-drHJU6H6OE_Dm8L3XAyIZ1DjG_AuRCAqPGL4U345crcgroYNFrT/pubhtml?widget=true&amp;headers=false" width="850" height="650">
 		<body onload="ShowTime()">
+			<div id="showbox"></div>
+		</body>
 	</center>
-	
 </body>
 </html>
 	
